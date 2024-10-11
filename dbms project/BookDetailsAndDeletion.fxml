@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?import javafx.scene.control.Button?> 
+<?import javafx.scene.control.Label?> 
+<?import javafx.scene.control.ScrollPane?> 
+<?import javafx.scene.control.TextField?> 
+<?import javafx.scene.effect.DropShadow?> 
+<?import javafx.scene.image.Image?> 
+<?import javafx.scene.image.ImageView?> 
+<?import javafx.scene.layout.AnchorPane?> 
+<?import javafx.scene.layout.HBox?> 
+<?import javafx.scene.layout.VBox?> 
+<?import javafx.scene.text.Font?> 
+<?import javafx.scene.text.Text?> 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="
+Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="672.0" 
+xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="DeletionController"> 
+<children> 
+<ImageView fitHeight="456.0" fitWidth="682.0" layoutY="-5.0" 
+pickOnBounds="true"> 
+<image> 
+<Image url="@../img/Menu.jpg" /> 
+</image> 
+</ImageView> 
+<ScrollPane layoutX="83.0" layoutY="73.0" prefHeight="217.0" 
+prefWidth="530.0"> 
+<content> 
+<HBox alignment="TOP_CENTER" prefHeight="609.0" prefWidth="530.0" 
+spacing="25.0"> 
+<children> 
+<VBox fx:id="BookIDVBox" alignment="TOP_CENTER" prefHeight="609.0" 
+prefWidth="144.0"> 
+<children> 
+<Label /> 
+</children> 
+</VBox> 
+<VBox fx:id="BookNameVBox" alignment="TOP_CENTER" prefHeight="609.0" 
+prefWidth="144.0"> 
+<children> 
+<Label prefHeight="17.0" prefWidth="16.0" /> 
+</children> 
+</VBox> 
+<VBox fx:id="BookAuthorVBox" alignment="TOP_CENTER" prefHeight="609.0" 
+prefWidth="144.0"> 
+<children> 
+<Label prefHeight="17.0" prefWidth="17.0" /> 
+</children> 
+</VBox> 
+</children> 
+</HBox> 
+</content> 
+</ScrollPane> 
+<Text fill="WHITE" layoutX="226.0" layoutY="39.0" stroke="BLACK" 
+strokeType="OUTSIDE" text="Book Details" textAlignment="CENTER"> 
+<font> 
+<Font name="Courier New Bold" size="32.0" /> 
+</font> 
+</Text> 
+<Text layoutX="282.0" layoutY="325.0" strokeType="OUTSIDE" 
+strokeWidth="0.0" text="Deletion"> 
+<font> 
+<Font name="Constantia" size="20.0" /> 
+</font> 
+</Text> 
+<TextField fx:id="cusIDDeletion" layoutX="181.0" layoutY="343.0" 
+promptText="Enter Book ID"> 
+<effect> 
+<DropShadow /> 
+</effect> 
+</TextField> 
+<Button fx:id="deleteButton" layoutX="350.0" layoutY="343.0" 
+mnemonicParsing="false" onAction="#DeleteButtonOnClicked" style="-fx
+background-color: wheat;" text="Delete"> 
+<effect> 
+<DropShadow /> 
+</effect></Button> 
+<Button fx:id="backButton" layoutX="35.0" layoutY="18.0" 
+mnemonicParsing="false" onAction="#backButtonOnClicked" style="-fx
+background-color: lightskyblue;" text="Back"> 
+<effect> 
+<DropShadow /> 
+</effect></Button> 
+</children> 
+</AnchorPane> 

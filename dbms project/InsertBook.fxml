@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?import javafx.scene.control.Button?> 
+<?import javafx.scene.control.Label?> 
+<?import javafx.scene.control.TextField?> 
+<?import javafx.scene.effect.DropShadow?> 
+<?import javafx.scene.image.Image?> 
+<?import javafx.scene.image.ImageView?> 
+<?import javafx.scene.layout.AnchorPane?> 
+<?import javafx.scene.text.Font?> 
+<?import javafx.scene.text.Text?> 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="
+Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="InsertBookController"> 
+<children> 
+<ImageView fitHeight="406.0" fitWidth="612.0" layoutX="-8.0" layoutY="-1.0" 
+pickOnBounds="true"> 
+<image> 
+<Image url="@../img/Menu.jpg" /> 
+</image> 
+</ImageView> 
+<Text layoutX="165.0" layoutY="64.0" stroke="WHITE" strokeType="OUTSIDE" 
+strokeWidth="2.0" text="Enter a New Book"> 
+<font> 
+<Font name="Arial Bold" size="32.0" /> 
+</font> 
+</Text> 
+<TextField fx:id="NewBookField" layoutX="300.0" layoutY="143.0" 
+prefHeight="32.0" prefWidth="209.0" promptText="Book Name"> 
+<effect> 
+<DropShadow /> 
+</effect></TextField> 
+<Label layoutX="117.0" layoutY="148.0" text="Enter Book Name: " 
+textFill="WHITE"> 
+<font> 
+<Font name="Calibri" size="19.0" /> 
+</font> 
+</Label> 
+<Label layoutX="127.0" layoutY="200.0" text="Enter Book Author: " 
+textFill="WHITE"> 
+<font> 
+<Font name="Calibri" size="19.0" /> 
+</font> 
+</Label> 
+<TextField fx:id="NewAuthorField" layoutX="300.0" layoutY="195.0" 
+prefHeight="32.0" prefWidth="209.0" promptText="Author Name"> 
+<effect> 
+<DropShadow /> 
+</effect></TextField> 
+<Button layoutX="242.0" layoutY="328.0" mnemonicParsing="false" 
+onAction="#DoneButtonOnClicked" prefHeight="32.0" prefWidth="108.0" 
+style="-fx-background-color: wheat;" text="Done"> 
+<effect> 
+<DropShadow /> 
+</effect></Button> 
+<Button layoutX="25.0" layoutY="44.0" mnemonicParsing="false" 
+onAction="#backButtonOnClicked" style="-fx-background-color: lightskyblue;" 
+text="Back"> 
+<effect> 
+<DropShadow /> 
+</effect></Button> 
+</children> 
+</AnchorPane> 
